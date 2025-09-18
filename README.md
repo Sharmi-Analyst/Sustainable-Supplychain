@@ -20,7 +20,15 @@ The project includes 5 main entities:
 - **Sustainability Metrics** – Food waste percentage, carbon footprint  
 
 📌 **ER Diagram**  
-![ER Diagram](ER-diagram.png)  
+Farms (farm_id) ───< Shipments >─── (distributor_id) Distributors  
+                         │
+                         │
+                         v
+                  (warehouse_id)
+                    Warehouses
+
+Shipments (shipment_id) ───< Sustainability
+
 
 ---
 
@@ -28,7 +36,7 @@ The project includes 5 main entities:
 - `schema.sql` → SQL scripts for table creation  
 - `data.sql` → Sample data inserts  
 - `queries.sql` → Analytical queries  
-- `ER-diagram.png` → Visual schema representation  
+  
 
 ---
 
